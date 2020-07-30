@@ -1,0 +1,75 @@
+window.addEventListener("load" , function(){});  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Notes WebApp</title>
+</head>
+<body>
+
+ <!-- Navbar -->
+ <div id="Header">
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+   <div class="container-fluid">
+     <a href="#" class="navbar-brand">MY NOTES</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>   
+   <div class="collapse navbar-collapse" id="Navbar">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#">HOME</a>
+       </li>
+     </ul>
+     <form class="form-inline my-2 my-lg-0">
+       <input id="searchTxt" class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+     </form>
+   </div>
+   </div>
+ </nav>
+ </div>
+
+ <!-- Add Note -->
+ <hr>
+ <hr>
+ <div class="container my-5">
+   <h1>Welcome To My Notes</h1>
+   <hr>
+   <div class="card">
+     <div class="card-body">
+       <h4 class="card-title">Add A Note</h4>
+       <div class="form-group">
+         <textarea class="form-control" id="addTxt" rows="3"></textarea>
+       </div>
+       <button class="btn btn-primary" id="addBtn">Add Notes</button>
+     </div>
+   </div>
+ </div>
+
+ <!-- Note Card-->
+ <h1>Your Notes</h1>
+ <div id="notes" class="row container-fluid">
+  
+  <!--<div class="notecard(change "c" to "C" when use in js) my-2 mx-2 card" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title">NOTE</h4>
+    <p class="card-text"></p>
+    <button href="#" class="btn btn-primary">Delete Note</button>
+    <button id="${index}" onclick="editNote(this.id)" class="btn btn-primary">Edit Note</button>(copy here too)
+  </div>
+  </div> ALREADY CALLED IN APP.JS-->
+
+ </div>
+
+</body>
+</html>

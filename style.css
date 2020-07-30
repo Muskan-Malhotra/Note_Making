@@ -1,0 +1,30 @@
+body
+{
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  background: url("BricksImg.jpg");
+  background-size: 100%;
+}
+
+h1
+{
+  color: #FFF;
+  text-align: center;
+  border-bottom: 2px solid #FFF;
+  margin: 0px 100px;
+}
+
+.card-body
+{
+ border-top: 3px solid #000066;
+ border-bottom: 3px solid #000066;
+ border-radius: 30px;
+}
+
+#addTxt
+{
+  font-size: 25px;
+}
+
